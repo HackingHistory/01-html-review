@@ -1,8 +1,7 @@
 {
   "name": "web-skills-intro-assignment",
-  "version": "1.1.0",
-  "description": "An assignment for Digital History at University of Toronto. Tests basic Javascript skills.",
-  "main": "index.js",
+  "version": "1.0.0",
+  "description": "An assignment for Hacking History at University of Toronto. Revies basic HTML/CSS skills.",
   "scripts": {
     "test": "mocha -t 0 test/test.js   --reporter mochawesome --reporter-options reportDir=TestResults,reportFilename=testresults",
     "test-less-confusing": "mocha -t 0 test/test.js --reporter mochawesome --reporter-options reportDir=TestResults,reportFilename=testresults || true",
@@ -11,20 +10,12 @@
     "autograde-main": "mocha -t 0 test/test.js --grep \"Reflection|Git Checks\" --invert",
     "autograde-reflection": "mocha -t 0 test/test.js --grep \"Reflection\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/titaniumbones/assignment-web-skills-intro.git"
-  },
   "keywords": [
     "javascript",
     "assignment"
   ],
   "author": "Matt Price",
   "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/titaniumbones/assignment-web-skills-intro/issues"
-  },
-  "homepage": "https://github.com/titaniumbones/assignment-web-skills-intro#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
     "co": "^4.6.0",
@@ -40,16 +31,5 @@
     "mochawesome": "^6.1.1",
     "path": "^0.12.7",
     "window-resizeto": "0.0.2"
-  },
-  "oldDependencies": {
-    "mocha-phantomjs": "^4.1.0",
-    "karma-chrome-launcher": "^2.2.0",
-    "karma-html-reporter": "^0.2.7",
-    "karma-mocha-reporter": "^2.2.5",
-    "karma-phantomjs-launcher": "^1.0.4",
-    "karma-requirejs": "^1.1.0",
-    "karma-spec-reporter": "0.0.31",
-    "requirejs": "^2.3.5",
-    "selenium-webdriver": "^3.6.0"
   }
 }
